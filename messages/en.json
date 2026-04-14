@@ -1,0 +1,288 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects Gallery",
+    "companyProfile": "Company Profile",
+    "materials": "Materials",
+    "allMaterials": "All Materials",
+    "marble": "Marble",
+    "granite": "Granite",
+    "stone": "Stone",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "joinUs": "Join Us"
+  },
+  "Home": {
+    "badge": "Premium Marble & Stone Solutions",
+    "title": "Where stone becomes timeless design",
+    "description": "Alkan Marble & Stone supplies and executes premium marble, granite, and natural stone for residential, commercial, and architectural projects with refined craftsmanship and luxury standards.",
+    "discoverMaterials": "Discover Materials",
+    "companyProfile": "Company Profile",
+
+    "aboutLabel": "About Alkan",
+    "aboutTitle": "Premium stone solutions shaped by craftsmanship and architectural taste",
+    "aboutText1": "We create refined marble, granite, and stone applications for projects that demand elegance, precision, and long-lasting aesthetic value.",
+    "aboutText2": "From luxury interiors to distinctive feature walls and premium facades, our work combines material excellence with reliable execution and a clear eye for detail.",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+
+    "valueCard1Title": "Premium Materials",
+    "valueCard1Desc": "Carefully selected marble, granite, and natural stone for elegant and durable high-end applications.",
+    "valueCard2Title": "Skilled Execution",
+    "valueCard2Desc": "A practical project approach supported by workmanship, precision, and site-focused delivery.",
+    "valueCard3Title": "Trusted Quality",
+    "valueCard3Desc": "Finishes that feel luxurious, timeless, and suitable for premium residential and commercial environments.",
+
+    "materialsLabel": "Our Materials",
+    "materialsTitle": "Curated materials for elegant and timeless spaces",
+    "viewAllMaterials": "View All Materials",
+    "materialTag": "Material",
+    "materialMarble": "Marble",
+    "materialGranite": "Granite",
+    "materialStone": "Stone",
+
+    "servicesLabel": "Discover Our Services",
+    "servicesTitle": "Complete stone solutions for refined and exceptional projects",
+    "servicesDesc": "From material supply to professional execution, we deliver premium marble, granite, and natural stone solutions tailored for luxury residential and commercial environments.",
+    "exploreServices": "Explore Services",
+
+    "service1Title": "Material Supply",
+    "service1Desc": "Premium sourcing of marble, granite, and natural stone selected for durability, elegance, and timeless appeal.",
+    "service2Title": "Project Execution",
+    "service2Desc": "Professional implementation supported by precision, site expertise, and finishing standards suited for premium projects.",
+    "service3Title": "Custom Stone Solutions",
+    "service3Desc": "Bespoke solutions for floors, walls, facades, and architectural details tailored to each project identity.",
+
+    "projectsLabel": "Projects Showcase",
+    "projectsTitle": "A curated view of our project execution and design impact",
+    "projectsDesc": "Explore selected project visuals that reflect our attention to quality, detail, and refined architectural finishing.",
+    "viewProjectsGallery": "View Projects Gallery",
+    "featuredProject": "Featured Project",
+    "projectTitle": "Project",
+    "previousProject": "Previous project",
+    "nextProject": "Next project",
+
+    "partnersLabel": "Our Partners",
+    "partnersTitle": "Partners in success",
+    "partnersDesc": "We are proud to collaborate with trusted partners who share our commitment to quality, excellence, and long-term success in every project we deliver.",
+
+    "footerBrand": "Marble & Stone",
+    "footerDesc": "Premium marble, granite, and natural stone solutions for distinguished residential, commercial, and architectural projects.",
+    "footerQuickLinks": "Quick Links",
+    "footerAbout": "About Us",
+    "footerMaterials": "Materials",
+    "footerCompanyProfile": "Company Profile",
+    "footerContact": "Contact Us",
+
+    "footerMaterialsTitle": "Materials",
+    "footerMarble": "Marble",
+    "footerGranite": "Granite",
+    "footerStone": "Stone",
+
+    "footerCompanyInfo": "Company Info",
+    "footerLocation": "Jeddah, Saudi Arabia",
+    "footerCr": "CR No. 1010304247",
+    "footerCopyright": "© 2026 Alkan Marble & Granite & Stone Company. All rights reserved."
+  },
+  "Materials": {
+    "label": "Our Materials",
+    "title": "Curated materials for elegant and timeless spaces",
+    "description": "Explore our premium collection of marble, granite, and natural stone designed for luxury and architectural excellence.",
+    "collection": "Material Collection",
+    "explore": "Explore Material",
+
+    "marbleTitle": "Marble",
+    "marbleDesc": "Explore a refined selection of premium marble surfaces curated for luxury interiors, architectural projects, and timeless design applications.",
+
+    "graniteTitle": "Granite",
+    "graniteDesc": "Discover our premium granite selection engineered for durability, strength, and long-lasting performance. Ideal for high-traffic areas, exterior applications, and architectural designs that require both resilience and refined aesthetics.",
+
+    "stoneTitle": "Stone",
+    "stoneDesc": "Explore our natural stone collection selected for texture, warmth, and architectural character. These stone surfaces are ideal for facades, walls, landscapes, and refined interior applications that require timeless natural presence."
+  },
+  "Services": {
+    "label": "Our Services",
+    "title": "Complete marble and stone solutions",
+    "description": "We provide end-to-end services from material supply to professional execution with high standards.",
+
+    "service1Title": "Material Supply",
+    "service1Desc": "We provide high-quality marble, granite, and natural stone materials selected for durability and elegance.",
+
+    "service2Title": "Project Execution",
+    "service2Desc": "Professional project execution supported by precision, expertise, and high finishing standards.",
+
+    "service3Title": "Custom Solutions",
+    "service3Desc": "Design and execution of customized stone solutions tailored to each project.",
+
+    "process1Title": "Consultation",
+    "process1Desc": "Understanding project needs and requirements.",
+
+    "process2Title": "Planning",
+    "process2Desc": "Selecting suitable materials and defining execution strategy.",
+
+    "process3Title": "Execution",
+    "process3Desc": "Accurate implementation with high-quality standards.",
+
+    "process4Title": "Delivery",
+    "process4Desc": "Professional and reliable project delivery.",
+
+    "ctaLabel": "Start Your Project",
+    "ctaTitle": "Let’s discuss your project today",
+    "contact": "Contact Us",
+    "projects": "View Projects"
+  },"About": {
+  "heroAlt": "About Alkan",
+  "heroLabel": "About Us",
+  "heroTitle": "A refined vision in marble, granite, and stone",
+  "heroDesc": "Alkan Marble & Stone combines premium material expertise, factory capability, and refined execution standards to support luxury residential, hospitality, and commercial projects.",
+
+  "introLabel": "Who We Are",
+  "introTitle": "Turning natural stone into timeless architectural value",
+  "introDesc1": "At Alkan, we specialize in supplying and executing premium marble, granite, and stone with a clear focus on quality, durability, detail, and elevated design standards.",
+  "introDesc2": "Our work is built around carefully selected materials, refined finishing, practical experience, and dependable delivery that help transform ambitious concepts into distinguished built spaces.",
+  "companyProfile": "View Company Profile",
+  "introImageAlt": "Luxury stone interior",
+
+  "factoryLabel": "Factory & Equipment",
+  "factoryTitle": "A factory built for precision, consistency, and large-scale execution",
+  "factoryDesc": "Our factory is equipped with advanced infrastructure and specialized machinery to support high-quality production, precise cutting, detailed shaping, and efficient processing across a wide range of marble and stone applications.",
+
+  "factoryCard1Title": "Granite Cutting Equipment",
+  "factoryCard1Desc": "Heavy-duty granite cutting equipment designed for accurate and efficient processing of large-format slabs with improved speed and reduced material waste.",
+  "factoryCard2Title": "CNC & Precision Processing",
+  "factoryCard2Desc": "CNC-supported processing for shaping, engraving, drilling, and detailed architectural stone work with consistent finish quality and precision.",
+  "factoryCard3Title": "Production Capacity & Finishing",
+  "factoryCard3Desc": "A production environment structured for continuous workflow, polished finishing, and reliable preparation for projects that require speed, control, and premium quality standards.",
+
+  "factoryMainAlt": "Factory main equipment",
+  "factorySide1Alt": "Factory machine",
+  "factorySide2Alt": "Factory production area",
+
+  "whyLabel": "Why Alkan",
+  "whyTitle": "Strength in materials, confidence in execution",
+  "whyCard1Title": "Premium Materials",
+  "whyCard1Desc": "A selected portfolio of marble, granite, and stone for refined and durable applications.",
+  "whyCard2Title": "Factory Capability",
+  "whyCard2Desc": "In-house production support with machinery and processes built for precision, preparation, and consistency.",
+  "whyCard3Title": "Skilled Execution",
+  "whyCard3Desc": "Execution standards focused on finishing quality, detail control, and project readiness.",
+  "whyCard4Title": "Trusted Delivery",
+  "whyCard4Desc": "Reliable support for residential, hospitality, and commercial projects that demand premium results.",
+
+  "ctaLabel": "Let’s Build Something Exceptional",
+  "ctaTitle": "Partner with Alkan for premium materials, factory support, and refined execution",
+  "contact": "Contact Us"
+},
+"CompanyProfile": {
+  "heroLabel": "Company Profile",
+  "heroTitle": "Discover Alkan through our work, vision, and capabilities",
+  "heroDesc": "Explore our materials, projects, execution standards, and factory capability.",
+
+  "download": "Download Profile",
+  "contact": "Contact Us",
+
+  "introLabel": "About the Profile",
+  "introTitle": "A concise presentation of who we are",
+  "introDesc1": "Our company profile explains our expertise and product range.",
+  "introDesc2": "It highlights our quality and execution standards.",
+
+  "card1Title": "Materials",
+  "card1Desc": "Overview of marble, granite, and stone.",
+  "card2Title": "Projects",
+  "card2Desc": "Execution quality and project delivery.",
+  "card3Title": "Factory",
+  "card3Desc": "Production and operational capability.",
+
+  "downloadTitle": "Download Company Profile",
+  "downloadDesc": "Get the full PDF version",
+
+  "preview": "Preview PDF",
+
+  "ctaLabel": "Learn More About Alkan",
+  "ctaTitle": "Explore our quality and expertise"
+},
+"Projects": {
+  "label": "Our Projects",
+  "title": "A showcase of craftsmanship, detail, and refined stone execution",
+  "description": "Explore a selection of our completed projects featuring marble, granite, natural stone, and custom finishes across residential, hospitality, and commercial spaces.",
+  "project": "Project",
+  "projectSubtitle": "Marble & Stone Execution"
+},
+"Contact": {
+  "label": "Contact Us",
+  "title": "Let’s talk about your next project",
+  "description": "Reach out to Alkan for marble, granite, and stone services.",
+
+  "email": "Email",
+  "emailTitle": "General Inquiries",
+  "emailValue": "info@alkan.com.sa",
+
+  "phone": "Phone",
+  "phoneTitle": "Call Us",
+  "phoneValue": "+966 53 753 4345",
+
+  "whatsapp": "WhatsApp",
+  "whatsappTitle": "Quick Chat",
+  "whatsappBtn": "Chat Now",
+
+  "linkedin": "LinkedIn",
+  "linkedinTitle": "Our Profile",
+  "linkedinBtn": "Visit LinkedIn",
+
+  "formTitle": "Send us a message",
+  "name": "Full Name",
+  "emailInput": "Email",
+  "message": "Your Message",
+  "send": "Send Message",
+
+  "ctaTitle": "Let’s build something exceptional together"
+},
+"Careers": {
+  "heroLabel": "Join Our Team",
+  "heroTitle": "Build your future with Alkan Marble & Stone",
+  "heroDesc": "We are always looking for talented professionals who are passionate about quality, craftsmanship, and excellence in marble, stone, and granite solutions.",
+
+  "introLabel": "Careers at Alkan",
+  "introTitle": "Why work with us?",
+  "introDesc": "At Alkan, we value professionalism, precision, and long-term growth. Our team works on premium marble and stone solutions for residential, commercial, and custom architectural projects.",
+
+  "card1Title": "Premium Work Environment",
+  "card1Desc": "Be part of a company focused on refined execution, strong craftsmanship, and premium design standards.",
+  "card2Title": "Growth Opportunities",
+  "card2Desc": "We welcome motivated professionals across operations, sales, projects, engineering, production, and administration.",
+  "card3Title": "Professional Standards",
+  "card3Desc": "We believe in responsibility, quality, teamwork, and client satisfaction at every stage.",
+
+  "formLabel": "Application Form",
+  "formTitle": "Submit your application",
+  "formDesc": "Fill in your details and upload your CV in PDF format.",
+
+  "fullName": "Full Name",
+  "fullNamePlaceholder": "Enter your full name",
+  "email": "Email Address",
+  "emailPlaceholder": "Enter your email",
+  "phone": "Phone Number",
+  "phonePlaceholder": "Enter your phone number",
+  "position": "Position Applied For",
+  "selectPosition": "Select position",
+  "position1": "Sales Executive",
+  "position2": "Project Engineer",
+  "position3": "Site Supervisor",
+  "position4": "Factory Operator",
+  "position5": "Procurement Officer",
+  "position6": "Accountant",
+  "position7": "Other",
+
+  "experience": "Years of Experience",
+  "experiencePlaceholder": "Example: 5 years",
+  "message": "Short Message",
+  "messagePlaceholder": "Tell us about yourself",
+
+  "uploadCv": "Upload CV (PDF only)",
+  "uploadNote": "Please upload your CV in PDF format only.",
+  "submit": "Submit Application",
+  "successMessage": "Application submitted successfully. We will contact you soon."
+}
+}
