@@ -240,7 +240,7 @@ export default function Home() {
           <div className="group relative overflow-hidden rounded-[32px] bg-[#120e0c] shadow-[0_20px_60px_rgba(0,0,0,0.35)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
             <img
               src={item.image}
-              alt={t(item.key)}
+              alt={item.title}
               className="h-[460px] w-full object-cover transition duration-700 group-hover:scale-[1.1]"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.1)_0%,rgba(0,0,0,0.85)_100%)]" />
@@ -251,18 +251,18 @@ export default function Home() {
                 {t("materialTag")}
               </p>
               <h3 className="mt-3 font-[var(--font-heading)] text-3xl font-semibold text-white drop-shadow-[0_6px_20px_rgba(0,0,0,0.8)]">
-                {t(item.key)}
+                alt={item.title}
               </h3>
             </div>
           </div>
         );
 
         return item.href ? (
-          <Link key={item.key} href={item.href}>
+          <Link key={item.href} href={item.href}>
             {content}
           </Link>
         ) : (
-          <div key={item.key} className="cursor-default">
+          <div key={item.href} className="cursor-default">
             {content}
           </div>
         );
