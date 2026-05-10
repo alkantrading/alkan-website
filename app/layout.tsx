@@ -8,11 +8,11 @@ const headingFont = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-const bodyFont = Inter({
+const bodyFont = Inter({ 
   variable: "--font-body",
   subsets: ["latin"],
 });
-
+ 
 export const metadata: Metadata = {
   title: "Alkan Marble & Stone",
   description:
