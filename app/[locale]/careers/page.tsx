@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSesaeRg5_9vmi-O_8p7x4Y-gYtZ2QxghXL5y4LjlxdOHKC_sQ/viewform";
+
 export default function CareersPage() {
   const t = useTranslations("Careers");
 
@@ -11,14 +14,15 @@ export default function CareersPage() {
     email: "",
     phone: "",
     position: "",
+    otherPosition: "",
     experience: "",
     message: "",
   });
 
-  const [cvFile, setCvFile] = useState<File | null>(null);
-
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -26,33 +30,32 @@ export default function CareersPage() {
     }));
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setCvFile(e.target.files[0]);
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("Applicant Data:", formData);
-    console.log("CV File:", cvFile);
+    if (formData.position === "Other" && !formData.otherPosition.trim()) {
+      alert("Please write the other position.");
+      return;
+    }
 
-    alert(t("successMessage"));
+    window.open(GOOGLE_FORM_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
     <main className="min-h-screen bg-[#f7f3ee] text-[#241b16]">
       <section className="relative overflow-hidden border-b border-[#e7d9cc] bg-[linear-gradient(135deg,#2b211c_0%,#4b372d_55%,#8d6a52_100%)] px-6 py-24 lg:px-12">
         <div className="absolute inset-0 bg-black/20" />
+
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-3xl rounded-[28px] border border-white/10 bg-white/10 p-8 backdrop-blur-md lg:p-12">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#e7d2bf]">
               {t("heroLabel")}
             </p>
+
             <h1 className="text-4xl font-semibold leading-tight text-white md:text-6xl">
               {t("heroTitle")}
             </h1>
+
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#f5e9df] md:text-lg">
               {t("heroDesc")}
             </p>
@@ -66,9 +69,11 @@ export default function CareersPage() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#9a7a61]">
               {t("introLabel")}
             </p>
+
             <h2 className="text-3xl font-semibold text-[#241b16]">
               {t("introTitle")}
             </h2>
+
             <p className="mt-5 text-base leading-8 text-[#6a5a4f]">
               {t("introDesc")}
             </p>
@@ -108,9 +113,11 @@ export default function CareersPage() {
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#9a7a61]">
                 {t("formLabel")}
               </p>
+
               <h2 className="text-3xl font-semibold text-[#241b16]">
                 {t("formTitle")}
               </h2>
+
               <p className="mt-4 text-base leading-8 text-[#6a5a4f]">
                 {t("formDesc")}
               </p>
@@ -177,16 +184,72 @@ export default function CareersPage() {
                     className="w-full rounded-2xl border border-[#dbcbbb] bg-[#fcfaf8] px-4 py-3 text-[#241b16] outline-none transition focus:border-[#9a7a61] focus:bg-white"
                   >
                     <option value="">{t("selectPosition")}</option>
-                    <option value="Sales Executive">{t("position1")}</option>
-                    <option value="Project Engineer">{t("position2")}</option>
-                    <option value="Site Supervisor">{t("position3")}</option>
-                    <option value="Factory Operator">{t("position4")}</option>
-                    <option value="Procurement Officer">{t("position5")}</option>
-                    <option value="Accountant">{t("position6")}</option>
+                    <option value="Marble Project Engineer">
+                      Marble Project Engineer | مهندس مشاريع رخام
+                    </option>
+                    <option value="Site Engineer">
+                      Site Engineer | مهندس موقع
+                    </option>
+                    <option value="Factory Production Engineer">
+                      Factory Production Engineer | مهندس إنتاج مصنع
+                    </option>
+                    <option value="Marble Installation Supervisor">
+                      Marble Installation Supervisor | مشرف تركيب رخام
+                    </option>
+                    <option value="Quantity Surveyor">
+                      Quantity Surveyor | حاسب كميات
+                    </option>
+                    <option value="AutoCAD Draftsman">
+                      AutoCAD Draftsman | رسام أوتوكاد
+                    </option>
+                    <option value="Procurement Officer">
+                      Procurement Officer | مسؤول مشتريات
+                    </option>
+                    <option value="Sales Executive">
+                      Sales Executive | مسؤول مبيعات
+                    </option>
+                    <option value="Factory Operator">
+                      Factory Operator | مشغل مصنع
+                    </option>
+                    <option value="CNC Machine Operator">
+                      CNC Machine Operator | مشغل ماكينة CNC
+                    </option>
+                    <option value="Polishing Technician">
+                      Polishing Technician | فني تلميع
+                    </option>
+                    <option value="Marble Cutter">
+                      Marble Cutter | فني قص رخام
+                    </option>
+                    <option value="Warehouse Coordinator">
+                      Warehouse Coordinator | منسق مستودعات
+                    </option>
+                    <option value="Accountant">
+                      Accountant | محاسب
+                    </option>
+                    <option value="Administrative Assistant">
+                      Administrative Assistant | مساعد إداري
+                    </option>
                     <option value="Other">{t("position7")}</option>
                   </select>
                 </div>
               </div>
+
+              {formData.position === "Other" && (
+                <div className="rounded-2xl border border-[#eadfd4] bg-[#faf7f3] p-5">
+                  <label className="mb-2 block text-sm font-medium text-[#241b16]">
+                    {t("position7")}
+                  </label>
+                  <input
+                    type="text"
+                    name="otherPosition"
+                    value={formData.otherPosition}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-2xl border border-[#dbcbbb] bg-white px-4 py-3 text-[#241b16] outline-none transition focus:border-[#9a7a61]"
+                    placeholder="Write the position"
+                  />
+                </div>
+              )}
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#241b16]">
@@ -216,19 +279,9 @@ export default function CareersPage() {
                 />
               </div>
 
-              <div>
-                <label className="mb-2 block text-sm font-medium text-[#241b16]">
-                  {t("uploadCv")}
-                </label>
-                <input
-                  type="file"
-                  accept=".pdf"
-                  onChange={handleFileChange}
-                  required
-                  className="block w-full rounded-2xl border border-dashed border-[#cdb8a5] bg-[#fcfaf8] px-4 py-4 text-sm text-[#6a5a4f]"
-                />
-                <p className="mt-2 text-xs text-[#8a7668]">
-                  {t("uploadNote")}
+              <div className="rounded-2xl border border-[#eadfd4] bg-[#faf7f3] p-5">
+                <p className="text-sm leading-7 text-[#6a5a4f]">
+                  After submitting this form, the official Google application form will open so you can upload your CV and complete the final submission.
                 </p>
               </div>
 
@@ -236,7 +289,7 @@ export default function CareersPage() {
                 type="submit"
                 className="inline-flex min-h-[54px] items-center justify-center rounded-2xl bg-[#2b211c] px-8 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-[#4a382d]"
               >
-                {t("submit")}
+                Continue to CV Upload
               </button>
             </form>
           </div>

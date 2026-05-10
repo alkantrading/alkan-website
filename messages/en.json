@@ -131,8 +131,9 @@
     "ctaLabel": "Start Your Project",
     "ctaTitle": "Let’s discuss your project today",
     "contact": "Contact Us",
-    "projects": "View Projects"
-  },"About": {
+"projects": "View Projects"
+},
+"About": {
   "heroAlt": "About Alkan",
   "heroLabel": "About Us",
   "heroTitle": "A refined vision in marble, granite, and stone",
@@ -171,10 +172,26 @@
   "whyCard4Title": "Trusted Delivery",
   "whyCard4Desc": "Reliable support for residential, hospitality, and commercial projects that demand premium results.",
 
+  "locationsLabel": "Our Locations",
+  "locationsTitle": "Visit our head office and factory",
+  "locationsDesc": "Find Alkan Marble & Stone across our main administration office and factory location.",
+
+  "headOfficeLabel": "Head Office",
+  "headOfficeTitle": "Administration Office",
+  "headOfficeDesc": "Main administration and business inquiries location for clients and partners.",
+
+  "factoryLocationLabel": "Factory",
+  "factoryLocationTitle": "Production & Stone Facility",
+  "factoryLocationDesc": "Factory location dedicated to marble, granite, and stone production operations.",
+
+  "viewOnMaps": "View on Maps",
+  "contactUs": "Contact Us",
+
   "ctaLabel": "Let’s Build Something Exceptional",
   "ctaTitle": "Partner with Alkan for premium materials, factory support, and refined execution",
   "contact": "Contact Us"
 },
+
 "CompanyProfile": {
   "heroLabel": "Company Profile",
   "heroTitle": "Discover Alkan through our work, vision, and capabilities",

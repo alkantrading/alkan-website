@@ -108,41 +108,22 @@ export default function AboutPage() {
             </div>
 
             <div className="grid gap-5 animate-fade-up-delay">
-              <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)]">
-                <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                  01
-                </p>
-                <h3 className="mt-3 font-[var(--font-heading)] text-[28px] font-semibold text-[#241915]">
-                  {t("factoryCard1Title")}
-                </h3>
-                <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                  {t("factoryCard1Desc")}
-                </p>
-              </div>
-
-              <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)]">
-                <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                  02
-                </p>
-                <h3 className="mt-3 font-[var(--font-heading)] text-[28px] font-semibold text-[#241915]">
-                  {t("factoryCard2Title")}
-                </h3>
-                <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                  {t("factoryCard2Desc")}
-                </p>
-              </div>
-
-              <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)]">
-                <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                  03
-                </p>
-                <h3 className="mt-3 font-[var(--font-heading)] text-[28px] font-semibold text-[#241915]">
-                  {t("factoryCard3Title")}
-                </h3>
-                <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                  {t("factoryCard3Desc")}
-                </p>
-              </div>
+              {[1, 2, 3].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)]"
+                >
+                  <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
+                    0{item}
+                  </p>
+                  <h3 className="mt-3 font-[var(--font-heading)] text-[28px] font-semibold text-[#241915]">
+                    {t(`factoryCard${item}Title`)}
+                  </h3>
+                  <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
+                    {t(`factoryCard${item}Desc`)}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -187,57 +168,127 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)] transition duration-300 hover:-translate-y-1">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                01
-              </p>
-              <h3 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-[#241915]">
-                {t("whyCard1Title")}
-              </h3>
-              <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                {t("whyCard1Desc")}
-              </p>
-            </div>
-
-            <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)] transition duration-300 hover:-translate-y-1">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                02
-              </p>
-              <h3 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-[#241915]">
-                {t("whyCard2Title")}
-              </h3>
-              <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                {t("whyCard2Desc")}
-              </p>
-            </div>
-
-            <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)] transition duration-300 hover:-translate-y-1">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                03
-              </p>
-              <h3 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-[#241915]">
-                {t("whyCard3Title")}
-              </h3>
-              <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                {t("whyCard3Desc")}
-              </p>
-            </div>
-
-            <div className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)] transition duration-300 hover:-translate-y-1">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
-                04
-              </p>
-              <h3 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-[#241915]">
-                {t("whyCard4Title")}
-              </h3>
-              <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
-                {t("whyCard4Desc")}
-              </p>
-            </div>
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                key={item}
+                className="rounded-[26px] border border-[#ddd0c4] bg-[rgba(255,255,255,0.80)] p-7 shadow-[0_14px_34px_rgba(36,26,21,0.06)] transition duration-300 hover:-translate-y-1"
+              >
+                <p className="text-[11px] uppercase tracking-[0.3em] text-[#b38968]">
+                  0{item}
+                </p>
+                <h3 className="mt-3 font-[var(--font-heading)] text-2xl font-semibold text-[#241915]">
+                  {t(`whyCard${item}Title`)}
+                </h3>
+                <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
+                  {t(`whyCard${item}Desc`)}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+{/* LOCATIONS */}
+<section className="relative overflow-hidden bg-[#eee6de] py-24 lg:py-28">
+  <div className="absolute inset-0 opacity-[0.05]">
+    <img
+      src="/images/hero/hero-stone-wall.jpg"
+      alt="Stone texture"
+      className="h-full w-full object-cover"
+    />
+  </div>
 
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+    <div className="mb-14 max-w-4xl animate-fade-up">
+      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.34em] text-[#b38968]">
+        {t("locationsLabel")}
+      </p>
+
+      <h2 className="max-w-4xl font-[var(--font-heading)] text-4xl font-semibold leading-[1.02] text-[#241915] md:text-5xl lg:text-6xl">
+        {t("locationsTitle")}
+      </h2>
+
+      <p className="mt-7 max-w-3xl text-base leading-8 text-[#5f4b3e] md:text-lg">
+        {t("locationsDesc")}
+      </p>
+    </div>
+
+    <div className="grid gap-7 lg:grid-cols-2">
+      {/* HEAD OFFICE */}
+      <div className="group rounded-[34px] border border-[#d8c7b8] bg-[rgba(255,255,255,0.78)] p-8 shadow-[0_24px_60px_rgba(36,26,21,0.10)] backdrop-blur-md transition duration-500 hover:-translate-y-2 hover:border-[#b38968] hover:shadow-[0_30px_70px_rgba(36,26,21,0.16)]">
+        <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f3e7db] text-2xl text-[#8b5e3c] shadow-inner">
+          ◎
+        </div>
+
+        <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#b38968]">
+          {t("headOfficeLabel")}
+        </p>
+
+        <h3 className="mt-4 font-[var(--font-heading)] text-3xl font-semibold text-[#241915]">
+          {t("headOfficeTitle")}
+        </h3>
+
+        <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
+          {t("headOfficeDesc")}
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="https://maps.app.goo.gl/nw64xrpe6GgAxMCm7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#231813] px-7 text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:-translate-y-1 hover:bg-[#3a2a22]"
+          >
+            {t("viewOnMaps")}
+          </a>
+
+          <Link
+            href="/contact"
+            className="inline-flex min-h-[50px] items-center justify-center rounded-full border border-[#cdbba9] px-7 text-sm font-semibold uppercase tracking-[0.14em] text-[#241915] transition duration-300 hover:-translate-y-1 hover:bg-white"
+          >
+            {t("contactUs")}
+          </Link>
+        </div>
+      </div>
+
+      {/* FACTORY */}
+      <div className="group rounded-[34px] border border-[#d8c7b8] bg-[rgba(255,255,255,0.78)] p-8 shadow-[0_24px_60px_rgba(36,26,21,0.10)] backdrop-blur-md transition duration-500 hover:-translate-y-2 hover:border-[#b38968] hover:shadow-[0_30px_70px_rgba(36,26,21,0.16)]">
+        <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#f3e7db] text-2xl text-[#8b5e3c] shadow-inner">
+          ◈
+        </div>
+
+        <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#b38968]">
+          {t("factoryLocationLabel")}
+        </p>
+
+        <h3 className="mt-4 font-[var(--font-heading)] text-3xl font-semibold text-[#241915]">
+          {t("factoryLocationTitle")}
+        </h3>
+
+        <p className="mt-4 text-[15px] leading-8 text-[#5f4b3e]">
+          {t("factoryLocationDesc")}
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="https://maps.app.goo.gl/4Jpcjf3dwbtuiWMN8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#231813] px-7 text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:-translate-y-1 hover:bg-[#3a2a22]"
+          >
+            {t("viewOnMaps")}
+          </a>
+
+          <Link
+            href="/contact"
+            className="inline-flex min-h-[50px] items-center justify-center rounded-full border border-[#cdbba9] px-7 text-sm font-semibold uppercase tracking-[0.14em] text-[#241915] transition duration-300 hover:-translate-y-1 hover:bg-white"
+          >
+            {t("contactUs")}
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section className="bg-[#1b130f] py-20 text-white">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-10">
