@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import {Link, usePathname} from "@/i18n/navigation";
-import {useLocale, useTranslations} from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
 const mainLinks = [
   { key: "home", href: "/" },
@@ -16,24 +17,28 @@ const materialLinks = [
   { key: "allMaterials", href: "/materials" },
   { key: "marble", href: "/materials/marble" },
   { key: "granite", href: "/materials/granite" },
-  { key: "stone", href: "/materials/stone" }
+  { key: "stone", href: "/materials/stone" },
 ] as const;
 
 const contactLinks = [
   { key: "contactUs", href: "/contact" },
-  { key: "joinUs", href: "/careers" }
+  { key: "joinUs", href: "/careers" },
 ] as const;
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
   const locale = useLocale();
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-[rgba(15,12,10,0.85)] backdrop-blur-xl">
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-[rgba(15,12,10,0.9)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-10">
         <Link
           href="/"
+          onClick={closeMenu}
           className="flex shrink-0 items-center gap-4 transition duration-300 hover:opacity-90"
         >
           <Image
@@ -49,6 +54,7 @@ export default function Navbar() {
           </h1>
         </Link>
 
+        {/* DESKTOP NAV */}
         <nav className="hidden items-center gap-7 lg:flex">
           {mainLinks.map((link) => (
             <Link
@@ -131,8 +137,72 @@ export default function Navbar() {
           >
             EN
           </Link>
+
+          {/* MOBILE BUTTON */}
+          <button
+            type="button"
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="ml-2 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition hover:bg-white/20 lg:hidden"
+            aria-label="Toggle menu"
+          >
+            <span className="text-2xl leading-none">
+              {isOpen ? "×" : "☰"}
+            </span>
+          </button>
         </div>
       </div>
+
+      {/* MOBILE MENU */}
+      {isOpen && (
+        <div className="border-t border-white/10 bg-[rgba(18,14,12,0.98)] px-6 py-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl lg:hidden">
+          <nav className="mx-auto flex max-w-7xl flex-col gap-2">
+            {mainLinks.map((link) => (
+              <Link
+                key={link.key}
+                href={link.href}
+                onClick={closeMenu}
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-[#e8d8c3] transition hover:bg-white/5 hover:text-[#c59a72]"
+              >
+                {t(link.key)}
+              </Link>
+            ))}
+
+            <div className="mt-3 border-t border-white/10 pt-3">
+              <p className="px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#c59a72]">
+                {t("materials")}
+              </p>
+
+              {materialLinks.map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="block rounded-2xl px-4 py-3 text-sm text-[#e8d8c3] transition hover:bg-white/5 hover:text-[#c59a72]"
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-3 border-t border-white/10 pt-3">
+              <p className="px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#c59a72]">
+                {t("contact")}
+              </p>
+
+              {contactLinks.map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="block rounded-2xl px-4 py-3 text-sm text-[#e8d8c3] transition hover:bg-white/5 hover:text-[#c59a72]"
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
